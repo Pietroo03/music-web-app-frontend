@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
 
 export default function AlbumsPage() {
 
@@ -26,14 +27,11 @@ export default function AlbumsPage() {
 
 
     return (
-        <div className="min-h-screen bg-gray-100 pt-4 p-14"> {/* Aggiunto più padding */}
-            <h1 className="text-3xl font-bold text-center mb-10">Album Collection</h1> {/* Aggiunto più margine */}
+        <div className="min-h-screen bg-gray-100 pt-4 p-14">
+            <h1 className="text-3xl font-bold text-center mb-10">Album Collection</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {albums && albums.map((album) => (
-                    <div
-                        key={album.id}
-                        className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 h-full"
-                    >
+                    <Link to={`/albums/${album.id}`} key={album.id} className="bg-white p-3 rounded-2xl shadow-lg hover:shadow-2xl transition duration-200 h-full">
                         <img
                             src={album.foto}
                             alt={album.nome}
@@ -47,12 +45,10 @@ export default function AlbumsPage() {
                         <p className="text-xl text-gray-500 text-sm mt-2 h-40 overflow-y-auto">
                             {album.descrizione}
                         </p>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </div>
-
-
     );
 
 }
