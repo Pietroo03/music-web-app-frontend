@@ -60,13 +60,13 @@ export default function SingleAlbumPage() {
                         Vedi {album.artista.alias}
                     </Link >
 
-                    <Link to={`/albums/edit/${album.id}`} className="text-xl bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300" >
+                    <Link to={`/albums/edit/${album.id}`} className="text-xl bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 transition duration-300" >
                         Modifica Album
                     </Link >
 
                     <button
                         onClick={toggleModal}
-                        className="text-xl bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600 transition duration-300 ml-4"
+                        className="text-xl bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600 transition duration-300 ml-4 cursor-pointer"
                     >
                         Delete Album
                     </button>

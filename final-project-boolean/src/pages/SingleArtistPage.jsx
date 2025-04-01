@@ -56,9 +56,13 @@ export default function SingleArtistPage() {
                         Back to Artists List
                     </Link>
 
+                    <Link to={`/artists/edit/${artista.id}`} className="text-xl bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 transition duration-300" >
+                        Modifica Artista
+                    </Link >
+
                     <button
                         onClick={toggleModal}
-                        className="text-xl bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600 transition duration-300 ml-4"
+                        className="text-xl bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600 transition duration-300 ml-4 cursor-pointer"
                     >
                         Delete Artist
                     </button>
