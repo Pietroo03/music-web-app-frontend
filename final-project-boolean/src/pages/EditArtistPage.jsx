@@ -67,14 +67,8 @@ export default function EditArtistPage() {
         e.preventDefault();
 
         // Prepara l'oggetto per l'aggiornamento
-        const updatedArtist = {
-            ...artist,  // Include tutte le informazioni sull'artista
-            albums: artist.albums.map(album => ({
-                ...album,
-                generi: album.generi.map(g => g.id),  // Assicurati di inviare solo gli ID dei generi per ogni album
-            })),
-            generi: artist.generi.map(g => g.id),  // Solo gli ID dei generi dell'artista
-        };
+        const updatedArtist = { ...artist };
+        delete updatedArtist.albums; // Rimuove albums prima di inviare la richiesta
 
         try {
             const response = await fetch(`${artists_api_url}/${id}`, {
