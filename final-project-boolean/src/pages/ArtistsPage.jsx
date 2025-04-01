@@ -27,9 +27,9 @@ export default function ArtistsPage() {
 
 
     return (
-        <div className="min-h-screen bg-gray-100 pt-4 p-6 flex justify-center">
+        <div className="min-h-screen bg-gray-100 py-15 flex justify-center">
             <div className="container max-w-6xl">
-                <h1 className="text-5xl font-bold text-center mb-10">Artist Collection</h1>
+                <h1 className="text-5xl font-bold text-center mb-8">Artist Collection</h1>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                     {artists && artists.map((artist) => (
                         <Link to={`/artists/${artist.id}`} key={artist.id} className="bg-white p-4 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 h-full block text-center">

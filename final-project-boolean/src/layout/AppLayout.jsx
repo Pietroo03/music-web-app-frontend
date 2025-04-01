@@ -8,7 +8,7 @@ export default function AppLayout() {
         <>
             <Header />
 
-            <main className=" bg-light min-vh-100 m-0">
+            <main className="bg-light min-vh-100 m-0">
                 <Outlet />
             </main>
 
