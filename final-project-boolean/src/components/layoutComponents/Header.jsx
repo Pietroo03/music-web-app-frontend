@@ -4,7 +4,7 @@ export default function Header() {
     const location = useLocation();
 
     return (
-        <header className="flex justify-between items-center p-4 bg-gray-800 text-white">
+        <header className="flex justify-between items-center p-4 bg-gray-800 text-white sticky top-0 right-0 left-0 z-10">
             <h1 className="text-3xl font-bold">Albums & Artists Collection</h1>
             <Link
                 to={location.pathname === '/albums' ? '/artists' : '/albums'}
