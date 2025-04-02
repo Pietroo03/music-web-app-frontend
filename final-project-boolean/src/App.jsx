@@ -25,16 +25,16 @@ function App() {
             <Route path='/' element={<HomePage />}></Route>
             <Route path='/albums' element={<AlbumsPage />}></Route>
             <Route path='/artists' element={<ArtistsPage />}></Route>
-            <Route path='/genres' element={<GenresPage />}></Route>
+
             <Route path='/albums/:id' element={<SingleAlbumPage />}></Route>
             <Route path='/artists/:id' element={<SingleArtistPage />}></Route>
-            <Route path='/albums/create' element={<CreateAlbumPage />}></Route>
+
+            {/* <Route path='/albums/create' element={<CreateAlbumPage />}></Route>
+            <Route path='/genres' element={<GenresPage />}></Route>
             <Route path='/artists/create' element={<CreateArtistPage />}></Route>
             <Route path='/genres/create' element={<CreateGenrePage />}></Route>
             <Route path='/albums/edit/:id' element={<EditAlbumPage />}></Route>
-            <Route path='/artists/edit/:id' element={<EditArtistPage />}></Route>
-
-
+            <Route path='/artists/edit/:id' element={<EditArtistPage />}></Route> */}
 
           </Route>
         </Routes>

@@ -3,16 +3,15 @@ import Header from "../components/layoutComponents/Header";
 import Footer from "../components/layoutComponents/Footer";
 
 export default function AppLayout() {
-
     return (
-        <>
+        <div className="flex flex-col min-h-screen">
             <Header />
 
-            <main className="bg-light min-vh-100 m-0">
+            <main className="flex-1 bg-light">
                 <Outlet />
             </main>
 
             <Footer />
-        </>
-    )
+        </div>
+    );
 }

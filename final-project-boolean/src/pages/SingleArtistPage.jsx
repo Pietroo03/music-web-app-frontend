@@ -53,19 +53,19 @@ export default function SingleArtistPage() {
             <div className="max-w-3xl w-full flex flex-col items-center">
                 <div className="flex text-center mb-8 ">
                     <Link to="/artists" className="text-xl bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300 mr-4">
-                        Back to Artists List
+                        Torna agli Artisti
                     </Link>
 
-                    <Link to={`/artists/edit/${artista.id}`} className="text-xl bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 transition duration-300" >
+                    {/* <Link to={`/artists/edit/${artista.id}`} className="text-xl bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 transition duration-300" >
                         Modifica Artista
-                    </Link >
+                    </Link > */}
 
-                    <button
+                    {/* <button
                         onClick={toggleModal}
                         className="text-xl bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600 transition duration-300 ml-4 cursor-pointer"
                     >
                         Delete Artist
-                    </button>
+                    </button> */}
                 </div>
 
 
@@ -106,7 +106,7 @@ export default function SingleArtistPage() {
             </div>
 
             {/* Modale di conferma */}
-            {isModalOpen && (
+            {/* {isModalOpen && (
                 <div className="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center z-50">
                     <div className="bg-white p-6 rounded-lg shadow-lg w-96">
                         <h2 className="text-2xl mb-4">Sei sicuro di voler eliminare questo artista?</h2>
@@ -126,7 +126,7 @@ export default function SingleArtistPage() {
                         </div>
                     </div>
                 </div>
-            )}
+            )} */}
         </div>
     );
 }
