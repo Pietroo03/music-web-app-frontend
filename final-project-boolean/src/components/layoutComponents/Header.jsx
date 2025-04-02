@@ -17,7 +17,7 @@ export default function Header() {
                             Vedi Artisti
                         </Link>
 
-                        <Link
+                        {/* <Link
                             to="/genres"
                             className="text-lg bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300"
                         >
@@ -28,7 +28,7 @@ export default function Header() {
                             className="text-lg bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 transition duration-300"
                         >
                             Crea Album
-                        </Link>
+                        </Link> */}
                     </>
                 )}
 
@@ -41,7 +41,7 @@ export default function Header() {
                         >
                             Vedi Albums
                         </Link>
-                        <Link
+                        {/* <Link
                             to="/genres"
                             className="text-lg bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300"
                         >
@@ -52,11 +52,11 @@ export default function Header() {
                             className="text-lg bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 transition duration-300"
                         >
                             Crea Artista
-                        </Link>
+                        </Link> */}
                     </>
                 )}
 
-                {location.pathname === '/genres' && (
+                {/* {location.pathname === '/genres' && (
                     <>
                         <Link
                             to="/albums"
@@ -78,7 +78,7 @@ export default function Header() {
                         </Link>
                     </>
 
-                )}
+                )} */}
             </div>
         </header>
     );
