@@ -7,7 +7,7 @@ export default function Header() {
         <header className="flex justify-between items-center p-8 bg-gray-800 text-white sticky top-0 right-0 left-0 z-10">
             <h1 className="text-3xl font-bold">Albums & Artists Collection</h1>
             <div className="flex gap-4">
-                {/* Se siamo su /albums, mostriamo entrambi i bottoni per Artisti e Generi */}
+
                 {location.pathname === '/albums' && (
                     <>
                         <Link
@@ -32,7 +32,6 @@ export default function Header() {
                     </>
                 )}
 
-                {/* Se siamo su /artists o /genres, mostriamo un solo bottone di navigazione */}
                 {location.pathname === '/artists' && (
                     <>
                         <Link

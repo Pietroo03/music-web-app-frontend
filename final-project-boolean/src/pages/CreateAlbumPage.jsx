@@ -18,9 +18,8 @@ export default function CreateAlbumPage() {
     const navigate = useNavigate();
     const base_api_url = import.meta.env.VITE_EXPRESS_API_SERVER;
     const genresUrl = `${base_api_url}/genres`;
-    const artistsUrl = `${base_api_url}/artists`; // Aggiungi qui la rotta per recuperare gli artisti
+    const artistsUrl = `${base_api_url}/artists`;
 
-    // Recupera i generi dal DB
     useEffect(() => {
         const fetchGeneri = async () => {
             try {

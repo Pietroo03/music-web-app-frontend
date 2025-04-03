@@ -22,18 +22,18 @@ export default function SingleArtistPage() {
         fetchArtist();
     }, [id]);
 
-    const toggleModal = () => {
-        setIsModalOpen(!isModalOpen);
-    };
+    /*     const toggleModal = () => {
+            setIsModalOpen(!isModalOpen);
+        }; */
 
-    const handleDelete = async () => {
+    /* const handleDelete = async () => {
         try {
             const response = await fetch(`${artists_api_url}/${id}`, {
                 method: 'DELETE',
             });
             if (response.ok) {
                 console.log('Artista eliminato');
-                // Redirect to the artists list page after deletion
+
                 window.location.href = '/artists';
             } else {
                 console.error('Errore nell\'eliminare l\'artista');
@@ -42,7 +42,7 @@ export default function SingleArtistPage() {
             console.error('Errore nella richiesta di eliminazione:', error);
         }
         setIsModalOpen(false);
-    };
+    }; */
 
     if (!artista) {
         return <div>Loading...</div>;
@@ -85,7 +85,6 @@ export default function SingleArtistPage() {
                     </div>
                 </div>
 
-                {/* Sezione Album dell'Artista */}
                 {artista.albums && artista.albums.length > 0 && (
                     <div className="mt-12 w-full">
                         <h2 className="text-2xl font-bold text-center mb-6">Album di {artista.alias}</h2>

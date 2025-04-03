@@ -9,8 +9,6 @@ export default function ArtistsPage() {
 
     useEffect(() => {
 
-        //make a fetch request to the base api endpoint
-
         fetch(albums_api_url)
             .then(res => {
                 if (!res.ok) {

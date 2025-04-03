@@ -22,18 +22,18 @@ export default function SingleAlbumPage() {
         fetchAlbum();
     }, [id]);
 
-    const toggleModal = () => {
+    /* const toggleModal = () => {
         setIsModalOpen(!isModalOpen);
-    };
+    }; */
 
-    const handleDelete = async () => {
+    /* const handleDelete = async () => {
         try {
             const response = await fetch(`${albums_api_url}/${id}`, {
                 method: 'DELETE',
             });
             if (response.ok) {
                 console.log('Album eliminato');
-                // Redirect to the albums list page after deletion
+
                 window.location.href = '/albums';
             } else {
                 console.error('Errore nell\'eliminare l\'album');
@@ -42,7 +42,7 @@ export default function SingleAlbumPage() {
             console.error('Errore nella richiesta di eliminazione:', error);
         }
         setIsModalOpen(false);
-    };
+    }; */
 
     if (!album) {
         return <div>Loading...</div>;

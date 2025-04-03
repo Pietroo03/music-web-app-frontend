@@ -25,7 +25,6 @@ function App() {
             <Route path='/' element={<HomePage />}></Route>
             <Route path='/albums' element={<AlbumsPage />}></Route>
             <Route path='/artists' element={<ArtistsPage />}></Route>
-
             <Route path='/albums/:id' element={<SingleAlbumPage />}></Route>
             <Route path='/artists/:id' element={<SingleArtistPage />}></Route>
 
